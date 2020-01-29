@@ -25,7 +25,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         raise ValueError
     query = normalize('NFC', unicode(sys.argv[1])).encode('utf-8')
-    url = u'http://suggest.dic.daum.net/dic_all_ctsuggest?mod=json&cate=lan&q=%s'\
+    url = u'http://suggest.dic.daum.net/dic_all_ctsuggest?mod=json&cate=eng&q=%s'\
         % quote(query)
     data = json.loads(urlopen(url).read())
 

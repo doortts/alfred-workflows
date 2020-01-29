@@ -13,7 +13,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         raise ValueError
     query = normalize('NFC', unicode(sys.argv[1])).encode('utf-8')
-    url = u'http://small.dic.daum.net/search.do?q=%s' % quote(query)
+    url = u'http://small.dic.daum.net/search.do?dic=eng&q=%s' % quote(query)
     view = cocoa.BrowserView('Daum Dictionary', url, width=400, height=700)
     view.show()
     sys.exit(0)
