@@ -1,4 +1,4 @@
-다음 영어사진 Alfred Workflows
+다음 영어사전 Alfred Workflows
 ================
 
 > forked from: https://github.com/aseom/alfred-workflows
